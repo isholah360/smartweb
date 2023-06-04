@@ -1,0 +1,48 @@
+.the-percent{
+    width: 30vw;
+}
+.outer{
+    max-width: 100%;
+    height: 15px;
+    position: relative;
+    border-radius: 7.5px;
+    background-color:  aliceblue;
+}
+.insider{
+    width: 93%;
+    background-color: rgb(70, 70, 70);
+    border-radius: 7.5px;
+    top: 0px;
+    position: absolute;
+    height: 15px;
+}
+.sec{
+    width: 95%;
+}
+.third{
+    width: 98%;
+}
+.fourth{
+    width: 99%;
+}
+.percent-name{
+    color: rgb(59, 59, 59);
+    font-size: 1.2rem;
+    margin: .8rem 0;
+    font-weight: 600;
+    display: flex;
+    justify-content: space-between;
+}
+@media screen and (max-width:460px) {
+    .the-percent{
+        width: 80vw;
+    }
+       
+
+    .outer{
+        margin: 0 0rem;
+        width: 100%;
+    }
+    
+
+}

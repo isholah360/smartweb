@@ -1,0 +1,33 @@
+.complete-testimony{
+    background-color: rgb(171,170,170);
+    min-height: 50vh;
+    width: 100vw;
+   
+}
+.lines-title .testy{
+    color: rgb(85, 85, 85);
+}
+
+.services .lines hr{
+    background-color:  rgb(85, 85, 85);
+}
+.testy-carousel{
+    display: flex;
+    justify-content: center;
+    min-height: 0;
+    max-height: 90vh;
+    margin: 2rem 0rem;
+}
+
+.setimg{
+    width: 12rem;
+}
+
+@media screen and (max-width:460px) {
+    .complete-testimony{
+        min-height: 100vh;
+        padding: 0 0 4rem 0;
+    }
+   
+}
+

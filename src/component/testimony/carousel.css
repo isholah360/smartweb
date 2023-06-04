@@ -1,0 +1,72 @@
+.testy-carousel-main{
+    margin: 0 5%;
+    height: 70vh;
+    width: 85vw;
+    padding: 0 0 0 10%;
+   }
+.complete-review{
+    background-color: rgb(32,32,32);
+    color: lightgray;
+    padding: 4rem 2rem 1rem 2rem;
+    margin: 0rem 3rem 1.5rem 0;
+    font-family: poppins;
+    min-height: 45vh;
+   display: flex;
+   flex-direction: column;
+   align-items: center;
+   position: relative;
+   z-index: -1;
+   
+}
+.each-review{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    
+}
+.name-pix{
+}
+.review-pix{
+    width: 3rem;
+    background-color: lightgray;
+    top: 0rem;
+   height: 6rem;
+   width: 6rem;
+   z-index: 100;
+   border-radius: 50%;
+   margin: 0em  0 -2.5rem 38.5%;
+   z-index: 6;
+}
+.revimg{
+    width: 100%;
+    border-radius: 50%;
+}
+.review{
+    text-align: center;
+    padding: 1rem 0 0 0;
+}
+.name{
+    font-family: poppins;
+    font-weight: 700;
+    font-size: 1.2rem;
+    color: rgb(138, 138, 138);
+}
+
+@media screen and (max-width:460px) {
+    .complete-review{
+        min-height: 70vh;
+        margin: 1rem 0;
+        padding: 3.2rem .7rem .8rem .7rem;
+    }
+    .review-pix{
+       margin: 0em  0 -3.5rem 33%;
+    }
+    .testy-carousel-main{
+        margin: 0rem 5% 0 5%;
+        height: 100vh;
+        width: 85vw;
+        padding: 0rem 0 0 3%;
+        
+       }
+}
