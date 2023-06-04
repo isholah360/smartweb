@@ -7,14 +7,12 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    /* padding: 6rem 0 0 0; */
-
-    margin: 6rem 0 0 0;
+ 
 }
 .header-pix{
     height: 90vh;
     width: 60vw;
-    margin: 1.4rem -3rem 0 3rem;
+    margin: 8rem -3rem 0 3rem;
 }
 .head-pixel{
     height: 100%;
