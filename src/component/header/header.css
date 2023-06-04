@@ -10,9 +10,9 @@
  
 }
 .header-pix{
-    height: 90vh;
+    min-height: 90vh;
     width: 60vw;
-    margin: 8rem -3rem 0 3rem;
+    margin: 2.5rem -3rem 0 3rem;
 }
 .head-pixel{
     height: 100%;
@@ -28,7 +28,7 @@
     
     }
     .header-pix{
-        height: 80vh;
+        height: 50vh;
         width: 90vw;
         margin: 2rem -2rem 0rem 0rem;
     }
