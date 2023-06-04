@@ -1,5 +1,5 @@
 .header{
-    height: 109vh;
+    min-height: 109vh;
     width: 100vw;
     background-color: #e5e3e3;
     display: flex;
@@ -7,7 +7,9 @@
     flex-direction: row;
     justify-content: center;
     align-items: center;
-    padding: 6rem 0 0 0;
+    /* padding: 6rem 0 0 0; */
+
+    margin: 6rem 0 0 0;
 }
 .header-pix{
     height: 90vh;
@@ -23,7 +25,7 @@
 @media screen and (max-width:460px) {
     .header{
         flex-direction: column;
-        min-height: 140vh;
+        height: 150vh;
         overflow-x: hidden;
     
     }

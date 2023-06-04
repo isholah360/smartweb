@@ -6,7 +6,7 @@
     flex-direction: column;
     align-items: center;
     justify-content: center; 
-    padding: 3rem 0;
+    padding: 3rem 0 0 0;
 }
 .download-percent{
     display: flex;
@@ -48,7 +48,11 @@
    font-family: poppins;
    font-weight: 700;
    margin: 0rem 0 1rem 0;
-   color: rgb(54, 54, 54);;;
+   color: rgb(54, 54, 54);
+}
+
+.lines .linez{
+    background-color: rgb(54, 54, 54);;
 }
 .lines hr{
     
@@ -63,6 +67,12 @@
     width: 4rem;
     margin: .4rem 0;
 }
+.lines .line-ones{
+    color: black;
+    background-color: rgb(54, 54, 54);;
+    width: 4rem;
+    margin: .4rem 0;
+}
 .complete-percent{
    margin: -5rem 0 0 0; 
 }
@@ -73,7 +83,7 @@
         min-height: 140vh;
         flex-direction: column;
         overflow-x: hidden;
-        margin: 0rem 0 5rem 0;
+        margin: 0rem 0 0rem 0;
         padding: 3rem 0 3rem 0;
     }
 

@@ -6,15 +6,11 @@ function Service() {
   return (
     <div>
       <div className="complete-services">
-          <div className="lines-title">
-            <div className="expery-title">MY SERVICES</div>
-              <div className="expery-lines">
-                  <div className="lines">
-                      <hr className='line-one' />
-                      <hr />
-                  </div>
-              </div>
-          </div>
+          <div className="lines">
+          <div  className="line-about experiency">MY SERVICES</div>
+            <hr className='line-one' />
+            <hr />
+        </div>
 
           <div className="service-blub">
             <Blub blubTitle="UI/UX DESIGN"

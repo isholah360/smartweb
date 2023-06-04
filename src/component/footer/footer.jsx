@@ -8,15 +8,11 @@ function Footer() {
   return (
     <div>
       <div className="complete-footer">
-        <div className="lines-title">
-            <div className="expery-title">LET'S GET IN TOUCH</div>
-              <div className="expery-lines">
-                  <div className="lines">
-                      <hr className='line-one' />
-                      <hr />
-                  </div>
-              </div>
-          </div>
+          <div className="lines">
+            <div  className="line-about experiency">LET'S GET IN TOUCH</div>
+              <hr className='line-one' />
+              <hr />
+        </div>
           <div className="contact-form-phone">
               <div className="phone-location-mail">
                 <div className="availability">

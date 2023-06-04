@@ -31,15 +31,11 @@ const Portfolio = ()=>{
         <div  className="complete-portfolio" ref={theHigh}>
               <div className='port-bg'>
                 <div className="port-head">
-                <div className="lines-title">
-                      <div className="expery-title">MY PORTFOLIO</div>
-                        <div className="expery-lines">
-                            <div className="lines">
-                                <hr className='line-one' />
-                                <hr />
-                            </div>
-                        </div>
-                    </div> 
+                <div className="lines">
+                    <div  className="line-about experiency">PORTFOLIO</div>
+                      <hr className='line-one' />
+                      <hr />
+                </div>
                 </div>
                 <div className="btn-container" >
                     <div className="bg-all" onClick={handleAll}>

@@ -11,15 +11,11 @@ function Blog() {
   return (
     <div>
       <div className="main-complete">
-          <div className="lines-title">
-            <div className="expery-title posts">BLOG POSTS</div>
-              <div className="expery-lines">
-                  <div className="lines">
-                      <hr className='line-one' />
-                      <hr />
-                  </div>
-              </div>
-          </div>
+          <div className="lines">
+          <div  className="line-about experiency">BLOG POSTS</div>
+            <hr className='line-one' />
+            <hr />
+        </div>
         <div className="complete-blog">
           {homeBlog.map(main=>(
             <div key={main} className="bloglist">

@@ -8,7 +8,7 @@
     color: rgb(85, 85, 85);
 }
 
-.services .lines hr{
+.complete-testimony .lines hr{
     background-color:  rgb(85, 85, 85);
 }
 .testy-carousel{
@@ -25,7 +25,7 @@
 
 @media screen and (max-width:460px) {
     .complete-testimony{
-        min-height: 100vh;
+        min-height: 120vh;
         padding: 0 0 4rem 0;
     }
    

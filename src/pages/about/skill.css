@@ -22,7 +22,8 @@
 }
 @media screen and (max-width:460px){
     .my-skills{
-        width: 90vw;
-        margin: 0 1rem;
+        width: 80vw;
+        margin: 0rem 1rem;
+       
     }
   }

@@ -85,7 +85,7 @@
   .main-about{
     grid-template-rows: 1.4fr 2.6fr;
     display: block;
-    min-height: 200vh;
+    min-height: 120vh;
     padding: 0rem 0 3rem 0;
   }
   .main-about .about-right .lang-des-percentage{
@@ -94,14 +94,17 @@
     
 }
 .little-testy{
-  max-width: 65vw;
-  margin: 0 20%;
+  min-width: 90vw;
+  margin: 5% 2%;
+  padding: 2rem 0;
 }
 .right-language{
-  margin: 3rem 0 0rem 0;
+  margin: 3rem 0 0rem 1rem;
 }
 .right-design{
-  margin: -3rem 0 0rem 0;
+  margin: -3rem 0 0rem 1rem;
 }
-
+.testimonials{
+  margin: 0 0rem 8rem 0;
+}
 }

@@ -12,8 +12,8 @@ function Cv() {
       <div className="cv-plane">
         <div className="lines">
           <div  className="line-about">ABOUT ME</div>
-            <hr className='line-one' />
-            <hr />
+            <hr className='line-ones  linez' />
+            <hr className='linez'/>
         </div>
        <div className="download-percent">
             <div className="downlod-cv">
