@@ -8,11 +8,17 @@ function Header() {
   return (
     <div>
       <div className="header">
-        <Animate/>
-        <Headcontent/>
-        {/* <div className="header-pix">
+        {/* <Animate/> */}
+
+        <div className="headcontent-bg">
+           <div className="head-cover">
+            <Headcontent/>
+           </div>
+        </div>
+      
+        <div className="header-pix">
           <img className='head-pixel' src="asset/header.png" alt="" />
-        </div> */}
+        </div>
       </div>
     </div>
   )

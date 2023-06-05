@@ -125,7 +125,7 @@
     bottom: -25px;
     display: block;
 
-    width: 100%;
+    /* width: 100%; */
     padding: 0 0px;
     margin: 0 -22px;
    justify-content: center;
@@ -154,8 +154,8 @@
 
     display: block;
 
-    width: 1rem;
-    height: 1rem;
+    /* width: 1rem;
+    height: 1rem; */
     padding: 5px 5px 5px 20px;
 
     cursor: pointer;
@@ -186,8 +186,8 @@
     top: 0;
     left: 0;
 
-    width: 50px;
-    height: 50px;
+    /* width: 50px;
+    height: 50px; */
 
     content: '•';
     text-align: center;
