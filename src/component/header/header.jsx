@@ -10,9 +10,9 @@ function Header() {
       <div className="header">
         <Animate/>
         <Headcontent/>
-        <div className="header-pix">
+        {/* <div className="header-pix">
           <img className='head-pixel' src="asset/header.png" alt="" />
-        </div>
+        </div> */}
       </div>
     </div>
   )
