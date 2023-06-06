@@ -1,11 +1,18 @@
 // eslint-disable-next-line no-unused-vars
-import React from 'react'
+import React, {useState} from 'react'
 import './cv.css'
 import './percent'
+import Cursor from '../custom/custom'
 import Percent from './percent'
 
 
 function Cv() {
+
+  const [init, setInit] = useState()
+
+  const extend= ()=>{
+      setInit("extend")
+  }
   
   return (
     <div>
@@ -32,7 +39,7 @@ function Cv() {
                 </p>
 
                 </div>
-                <button>DOWNLOAD MY CV</button>
+                <button onMouseEnter={extend}>DOWNLOAD MY CV</button>
             </div>
             <div className="complete-percent">
                 <Percent name="DESIGN" percentage="inside" actual="93%"/>
@@ -40,7 +47,8 @@ function Cv() {
                 <Percent  name="NODE JS" percentage="inside third" actual="98%"/>
                 <Percent  name="UI/UX DESIGN" percentage="inside fourth" actual="99%"/>
             </div>
-         
+           <Cursor extend={{ height: "120px",
+             width: "120px"}}/>
        </div>
       </div>
     </div>

@@ -15,6 +15,26 @@
     transform: translate(-50%, -50%);
     transition: .1s;
 }
+
+.extend{
+    position: fixed;
+    z-index: 5000;
+    top: 0;
+    left: 0;
+    height: 120px;
+    width: 120px;
+    opacity: .3;
+    background-color: #B19777 ;
+    border-radius: 50%;
+    pointer-events: none;
+    user-select: none;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border: 1px solid #B19777 ;;
+    transform: translate(-50%, -50%);
+    transition: .1s;
+}
 .cursor2{
   
     top: 0;

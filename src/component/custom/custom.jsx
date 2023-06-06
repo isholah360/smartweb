@@ -1,9 +1,15 @@
 import  {useRef, useEffect, useState} from 'react'
 import './custom.css'
 
-function Cursor() {
+function Cursor({extend, butons}) {
     const ref = useRef(null)
     const [init, setInit] = useState()
+
+   const buton = ()=>{
+      setInit(!init)
+    }
+
+    
     
     useEffect(()=>{
   
@@ -17,11 +23,16 @@ function Cursor() {
     },[])
   return (
     <div>
-      <div className={init? {} : "cursor" }
-             ref={ref}>
+      <div className={init ? {extend} : "cursor" }
+             ref={ref}  >
       <div className="cursor2"></div>
-    </div>     
+    </div> 
+
+    <div className="buton" onMouseEnter={buton}>
+      {butons}
+    </div>    
     </div>
+    
   )
 }
 

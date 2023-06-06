@@ -31,7 +31,7 @@
         margin: 6rem 0 0rem 0;
     }
     .headcontent-bg{
-       background-image: url("asset/header.png");
+       background-image: url("/asset/header.png");
         background-repeat: no-repeat;
         background-position: center;
         background-size: 132vh;  
