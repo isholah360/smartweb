@@ -1,6 +1,10 @@
 import './headercontent.css'
+import custom from '../custom/custom'
 
-function Headcontent() {
+function Headcontent(props) {
+  
+  const { onCursor } = props.context;
+
   return (
     <div>
         <div className="header-content">
@@ -17,8 +21,14 @@ function Headcontent() {
                 through carefully crafted code and user-centric design.
           </div>
           <div className="head-button">
-             <button>MY WORK</button>
-             <button>GET IN TOUCH</button>
+             <button
+                onMouseEnter={() => onCursor('pointer')}
+                onMouseLeave={onCursor}
+             >MY WORK</button>
+             <button
+                onMouseEnter={() => onCursor('pointer')}
+                onMouseLeave={onCursor}
+             >GET IN TOUCH</button>
           </div>
           
         </div>
@@ -26,4 +36,4 @@ function Headcontent() {
   )
 }
 
-export default Headcontent
+export default custom(Headcontent)

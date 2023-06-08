@@ -1,15 +1,18 @@
 import  { useRef, useState, useEffect } from "react";
 import './portfolio.css'
 import { images } from "./data";
+import custom from '../custom/custom'
 
 
 
-const Portfolio = ()=>{
+const Portfolio = (props)=>{
 
       const theHigh = useRef(null)
       const [tags, setTags] = useState('all')
       const [filtered, setFiltered] = useState([])
       // const [high, setHigh] = useState()
+
+      const { onCursor } = props.context;
 
 
     useEffect(()=>{
@@ -38,16 +41,35 @@ const Portfolio = ()=>{
                 </div>
                 </div>
                 <div className="btn-container" >
-                    <div className="bg-all" onClick={handleAll}>
+                    <div className="bg-all" 
+                    onMouseEnter={() => onCursor('pointer')}
+                    onMouseLeave={onCursor}
+
+                    onClick={handleAll}>
                       <Button titles="all" handleTag={setTags}/>
                     </div>
-                  <div className="bg-design" onClick={handleBg}>
+                  <div className="bg-design" 
+                  
+                    onMouseEnter={() => onCursor('pointer')}
+                    onMouseLeave={onCursor}
+                  
+                  onClick={handleBg}>
                    <Button titles="design" handleTag={setTags}/>
                   </div>
-                  <div className="bg-design" onClick={handleBg}>
+                  <div className="bg-design"
+                  
+                  onMouseEnter={() => onCursor('pointer')}
+                    onMouseLeave={onCursor}
+
+                  onClick={handleBg}>
                     <Button titles="branding" handleTag={setTags}/>
                   </div>
-                  <div className="bg-design" onClick={handleBg}>
+                  <div className="bg-design" 
+                  
+                  onMouseEnter={() => onCursor('pointer')}
+                    onMouseLeave={onCursor}
+                    
+                  onClick={handleBg}>
                     <Button titles="ui/ux" handleTag={setTags}/>
                   </div>
                 </div>
@@ -82,4 +104,4 @@ const Button= ({titles, handleTag}) =>{
     )
 }
 
-export default Portfolio;
+export default  custom(Portfolio);

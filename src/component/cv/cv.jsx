@@ -4,16 +4,12 @@ import './cv.css'
 import './percent'
 import Cursor from '../custom/custom'
 import Percent from './percent'
+import custom from '../custom/custom'
 
 
-function Cv() {
+function Cv(props) {
 
-  const [init, setInit] = useState()
-
-  const extend= ()=>{
-      setInit("extend")
-  }
-  
+  const { onCursor } = props.context;
   return (
     <div>
       <div className="cv-plane">
@@ -39,7 +35,11 @@ function Cv() {
                 </p>
 
                 </div>
-                <button onMouseEnter={extend}>DOWNLOAD MY CV</button>
+                <button 
+                 onMouseEnter={() => onCursor('pointer')}
+                 onMouseLeave={onCursor}
+                
+                >DOWNLOAD MY CV</button>
             </div>
             <div className="complete-percent">
                 <Percent name="DESIGN" percentage="inside" actual="93%"/>
@@ -55,4 +55,4 @@ function Cv() {
   )
 }
 
-export default Cv
+export default custom(Cv)

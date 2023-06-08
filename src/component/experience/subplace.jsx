@@ -1,16 +1,24 @@
-import React from 'react'
 import './subplace.css'
+import custom from '../custom/custom'
 
-function Subplace({name, major}) {
+function Subplace(props) {
+
+  const { onCursor } = props.context;
+
   return (
     <div>
 
         <div className="major-detail">
-            <div className="major-title">
-               {name}
+            <div className="major-title"
+
+              onMouseEnter={() => onCursor('pointer')}
+              onMouseLeave={onCursor}
+                          
+            >
+               {props.name}
             </div>
             <div className="major-content">
-            {major}
+            {props.major}
             </div>
         </div>
       
@@ -18,4 +26,4 @@ function Subplace({name, major}) {
   )
 }
 
-export default Subplace
+export default custom(Subplace)

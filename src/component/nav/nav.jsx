@@ -4,12 +4,13 @@ import './nav.css'
 import { gsap } from 'gsap'
 import { Power3 } from 'gsap/src/index';
 import { Link } from 'react-router-dom';
+import custom from '../custom/custom'
 
 
 
-function Nav() {
+function Nav(props) {
   const rid = useRef(null)
-
+  const { onCursor } = props.context;
 
   const [show, setShow] = useState(false)
 
@@ -42,17 +43,35 @@ function Nav() {
         </div>
         <div className="listz">
                 <hr />
-                <li> <Link to="/smartweb/"> Home </Link></li>
+                <li 
+                        onMouseEnter={() => onCursor('pointer')}
+                        onMouseLeave={onCursor}
+                > <Link to="/smartweb/"> Home </Link></li>
                 <hr />
-                <li><Link to="/smartweb/about"> About </Link></li>
+                <li
+                          onMouseEnter={() => onCursor('pointer')}
+                          onMouseLeave={onCursor}
+                ><Link to="/smartweb/about"> About </Link></li>
                 <hr />
-                <li><Link to="/smartweb/services"> Services </Link></li>
+                <li
+                          onMouseEnter={() => onCursor('pointer')}
+                          onMouseLeave={onCursor}
+                ><Link to="/smartweb/services"> Services </Link></li>
                 <hr />
-                <li><Link to="/smartweb/portfolio"> Portfolio </Link></li>
+                <li
+                          onMouseEnter={() => onCursor('pointer')}
+                          onMouseLeave={onCursor}
+                ><Link to="/smartweb/portfolio"> Portfolio </Link></li>
                 <hr />
-                <li><Link to="/smartweb/blog"> Blog </Link></li>
+                <li
+                            onMouseEnter={() => onCursor('pointer')}
+                            onMouseLeave={onCursor}
+                ><Link to="/smartweb/blog"> Blog </Link></li>
                 <hr />
-                <li><Link to="/smartweb/contact"> Contact </Link></li>
+                <li
+                        onMouseEnter={() => onCursor('pointer')}
+                        onMouseLeave={onCursor}
+                ><Link to="/smartweb/contact"> Contact </Link></li>
                 <hr />
             </div>
           
@@ -90,4 +109,4 @@ function Nav() {
   )
 }
 
-export default Nav
+export default  custom(Nav)

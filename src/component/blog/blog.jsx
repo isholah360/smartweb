@@ -1,13 +1,14 @@
 
 import './blog.css'
 import { Data } from './blogData'
+import custom from '../custom/custom'
 // import { useRef } from 'react'
 
 
-function Blog() {
+function Blog(props) {
 
   const homeBlog = Data.slice(0,3)
-  
+  const { onCursor } = props.context;
   return (
     <div>
       <div className="main-complete">
@@ -30,12 +31,19 @@ function Blog() {
                       </div>
                       <hr />
                       <div className="title-flash">
-                        <div className="title">{main.title}</div>
+                        <div className="title"
+                          onMouseEnter={() => onCursor('pointer')}
+                          onMouseLeave={onCursor}
+
+                        >{main.title}</div>
                         <div className="flash">
                           {main.content.slice(0, 100) + " " + "....."}
                         </div>
                       </div>
-                      <div className="readmore ">
+                      <div className="readmore "
+                        onMouseEnter={() => onCursor('pointer')}
+                        onMouseLeave={onCursor}
+                      >
                         READ MORE
                       </div>
                   </div>
@@ -49,4 +57,4 @@ function Blog() {
   )
 }
 
-export default Blog
+export default custom(Blog)

@@ -55,7 +55,7 @@
 
 @media screen and (max-width:460px) {
     .complete-review{
-        min-height: 70vh;
+        min-height: 45vh;
         margin: 1rem 0;
         padding: 3.2rem .7rem .8rem .7rem;
     }

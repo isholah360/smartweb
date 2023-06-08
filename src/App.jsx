@@ -4,12 +4,14 @@ import { Nav } from './component'
 import Cursor from './component/custom/custom'
 import {About, Blog, Contact, Home, Portfolio, Services} from './pages/index'
 import {Routes, Route} from 'react-router-dom'
+import CursorProvider from './component/providers/cursorProviders'
 
 function App() {
   
 
   return (
     <>
+     <CursorProvider>
     <Cursor/>
     <Nav/>
     <Routes>
@@ -20,7 +22,7 @@ function App() {
         <Route path="/smartweb/services" element={<Services/>}/>
         <Route path="/smartweb/portfolio" element={<Portfolio/>}/>
     </Routes>
-   
+    </CursorProvider>
     </>
   )
 }

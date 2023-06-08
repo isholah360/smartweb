@@ -3,8 +3,10 @@ import React from 'react'
 import './footer.css'
 import Phone from './phone'
 import { Link } from 'react-router-dom'
+import custom from '../custom/custom'
 
-function Footer() {
+function Footer(props) {
+  const { onCursor } = props.context;
   return (
     <div>
       <div className="complete-footer">
@@ -24,15 +26,24 @@ function Footer() {
                 <Phone phone="Location" myNum="Adekunle Fajuyi Barrack, Ojoo, Ibadan" phoneImg="asset/home.png"/>
 
                 <div className="socials">
-                  <div className="soc-img">
+                  <div className="soc-img" 
+                    onMouseEnter={() => onCursor('pointer')}
+                    onMouseLeave={onCursor}
+                  >
                      <Link to="https://twitter.com/isholah360?t=-nQPRU6sJIST1RmlDLNsPg&s=09"> 
                      <img className='main-soc-img' src="asset/twitter.png" alt="" /></Link>
                   </div>
-                  <div className="soc-img">
+                  <div className="soc-img"
+                          onMouseEnter={() => onCursor('pointer')}
+                          onMouseLeave={onCursor}
+                  >
                      <Link to="https://www.linkedin.com/in/ishola-durosinmi-69a01476">
                        <img className='main-soc-img' src="asset/linkedin.png" alt="" /></Link>
                   </div>
-                  <div className="soc-img">
+                  <div className="soc-img"
+                          onMouseEnter={() => onCursor('pointer')}
+                          onMouseLeave={onCursor}
+                  >
                       <img className='main-soc-img' src="asset/instagram.png" alt="" />
                   </div>
               </div>
@@ -60,4 +71,4 @@ function Footer() {
   )
 }
 
-export default Footer
+export default custom(Footer)

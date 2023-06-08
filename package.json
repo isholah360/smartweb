@@ -10,10 +10,12 @@
     "preview": "vite preview"
   },
   "dependencies": {
+    "classname": "^0.0.0",
     "gsap": "^3.11.5",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.11.2",
+    "react-script": "^2.0.5",
     "react-slick": "^0.29.0",
     "slick-carousel": "^1.8.1"
   },
